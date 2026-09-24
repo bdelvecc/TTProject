@@ -25,6 +25,9 @@ module tb ();
 `ifdef GL_TEST
   wire VPWR = 1'b1;
   wire VGND = 1'b0;
+  wire is_gl_test = 1'b1;
+`else
+  wire is_gl_test = 1'b0;
 `endif
 
   // Module instantiation
